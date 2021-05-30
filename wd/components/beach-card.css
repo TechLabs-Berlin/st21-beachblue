@@ -1,0 +1,30 @@
+body {
+    font-family: 'Maven Pro';
+    font-size: 14px;
+}
+
+header > p {
+    font-size: 12px;
+}
+header > h2 {
+    font-size: 24px;
+}
+
+.card {
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.card-body {
+    padding: 16px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
