@@ -56,5 +56,20 @@ Translated_df.loc[Translated_df['Yacht_Club']!= 'No','Yacht_Club'] = 'Yes'
 
 Translated_df.loc[Translated_df['Surfing_Zone']!= 'No','Surfing_Zone'] = 'Yes'
 
+Translated_df['Popularity'] = Translated_df['Popularity'].str.lower()
+
+mapping = {'bajo':'Low', 'medio':'Medium', 'alto':'High', 'muy bajo': 'Vey low', 'nulo':'Null','medio / alto':'Medium', 'medio / bajo':'Low' }
+
+Translated_df['Popularity'] = Translated_df['Popularity'].replace(mapping)
+
+mapping_1 = {'Menos de 50 plazas':'Less than 50 parking places', 'MÃ¡s de 100 plazas':'More than 100 places', 'Entre 50 y 100 plazas':'Between 50 and 100 parking places','Entre 150 y 200 plazas':'Between 150 and 200 parking places'}
+
+Translated_df['Parking_Spaces'] = Translated_df['Parking_Spaces'].replace(mapping_1)
+
+Translated_df.loc[(Translated_df['Parking_Spaces']!= 'Between 50 and 100 parking places') & (Translated_df['Parking_Spaces']!= 'Less than 50 parking places') & (Translated_df['Parking_Spaces']!= 'Between 150 and 200 parking places') & (Translated_df['Parking_Spaces']!= ' ') ,'Parking_Spaces'] = 'More than 100 places'
+
+Translated_df.loc[(Translated_df['Parking_Spaces']== ' '),'Parking_Spaces'] = np.nan
+
 Translated_df.to_csv('playas_translated_columns_new.csv')
 
+Translated_df.to_json('playas_translated_columns_new.json')
