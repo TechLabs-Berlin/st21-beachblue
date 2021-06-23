@@ -8,13 +8,13 @@ from sklearn.neighbors import KNeighborsClassifier
 
 from sklearn.model_selection import train_test_split
 
-knn = KNeighborsClassifier(n_neighbors = 5)
+knn = KNeighborsClassifier(n_neighbors = 3)
 
 df = pd.read_csv('playas_with_parcial_ratings.csv')
 
 mapping = {'Yes': 1, 'No': 0,'Parcial': 0.5, np.nan: 0}
 
-quality = {'Excellent': 1, 'Good':0.8, 'Sufficient':0.4, 'Poor':0, 'Not classified':0}
+quality = {'Excellent': 1, 'Good':0.8, 'Sufficient':0.4, 'Poor':0.2, 'Not classified':0}
 
 #print(df['quality2019'].unique())
 
@@ -80,7 +80,7 @@ X = data
 
 y = df['ratings_2']
 
-X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.2, random_state=100)
+X_train, X_test, y_train, y_test = train_test_split(X,y, test_size = 0.3, random_state=100)
 
 #print(X_train.describe())
 
