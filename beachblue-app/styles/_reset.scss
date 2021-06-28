@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+body, h1, h2, ul, li, a {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url('./img/oficial-home-img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Maven Pro", sans-serif;
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+ text-decoration: none;
+}
