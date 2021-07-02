@@ -1,0 +1,77 @@
+body {
+  font-family: "Maven pro";
+  font-size: 34px;
+  font-style: "Light";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.link-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 35px;
+}
+
+.logo-image {
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: inherit;
+  font-family: "Noteworthy";
+  font-style: "Light";
+  color: #044655;
+  margin:0 0 4px 0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.input-search {
+  font-family: inherit;
+  font-size: 14px;
+  width: 310px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid rgb(231, 231, 231);
+  background: #ffffff;
+  border-radius: 9999px;
+  margin-right: 15px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.base-button {
+  font-family: inherit;
+  border-radius: 9999px;
+}
+
+.button-header {
+  min-width: 200px;
+  height: 40px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.button-search {
+  background: #0f7b98;
+  color: white;
+  border: 1px solid grey;
+}
+
+.button-picks {
+  color: #0f7b98;
+  border: 1px solid white;
+  background: #bee7e9;
+  margin-left: auto;
+}
+
