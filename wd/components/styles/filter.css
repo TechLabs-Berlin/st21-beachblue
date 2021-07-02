@@ -1,0 +1,31 @@
+body {
+    font-family: 'Maven pro';
+    font-style: 'Light';
+}
+
+
+p,
+label {
+    font: 1rem 'Maven pro';
+}
+
+input {
+    margin: .4rem;
+}
+
+input[type='reset'],
+input[type='submit'] {
+    width: 5rem;
+    justify-self: end;
+}
+
+input[type='reset'] {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+input[type='submit'] {
+    grid-column: 2;
+    grid-row: 3;
+}
+
