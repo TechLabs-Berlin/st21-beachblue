@@ -16,7 +16,7 @@
   <header class="menu-bg">
     <div class="menu">
       <div class="menu-logo">
-        <img class="logo" src="./img/beach.png" alt="">
+        <img class="logo" src="./styles/img/beachlogo_nav_white.png" alt="">
         <a href="#">Beachblue</a>
       </div>
       <nav class="menu-nav">
@@ -26,12 +26,64 @@
       </nav>
     </div>
   </header>
-  <!-- content -->
-  <section>
-    <div>
+  <!--  Main content -->
+  <section class="home-content">
+    <div class="main-title">
+      <div class="title-container">
+        <img src="./styles/img/mainlogo_frontpage.png" alt="">
+        <p>Your next dip, right in one click!</p>
+      </div>
+    </div>
 
+    <div class="search-container">
+      <div class="search-bar">
+        <form class="search" action="">
+          <input type="text" placeholder="Enter the name of an area or spot" name="search">
+          <button class="search-btn" type="submit">Search now</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="cards">
+      <h3>Handpicked recommendations for you </h3>
+      <div class="cards-container">
+        <div id="card-1" class="card">
+          <img class="image" src="./styles/img/beach-1.png" alt="">
+          <div class="card-body">
+            <div>
+              <p class="city-country">Tarragona, Spain</p>
+              <p class="lake-beach">Playa Llarga</p>
+            </div>
+            <p class="description">Greyhound divisively hello coldly wonderfully marginally far upon...</p>
+          </div>
+        </div>
+        <div id="card-2" class="card">
+          <img class="image" src="./styles/img/wannsee.png" alt="">
+          <div class="card-body">
+            <div>
+              <p class="city-country">Berlin, Germany </p>
+              <p class="lake-beach">Wannsee</p>
+            </div>
+            <p class="description">Greyhound divisively hello coldly wonderfully marginally far upon...</p>
+          </div>
+        </div>
+        <div id="card-3" class="card">
+          <img src="./styles/img/palombaggia.jpg" alt="">
+          <div class="card-body">
+            <div>
+              <p class="city-country">Corsica, France</p>
+              <p class="lake-beach">Palombaggia</p>
+            </div>
+            <p class="description">Greyhound divisively hello coldly wonderfully marginally far upon...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="discover-btn">
+      <a href="">Discover more</a>
     </div>
   </section>
+
   <!-- Footer -->
   <footer>
     <div class="footer">
@@ -53,6 +105,7 @@
       </ul>
     </div>
   </footer>
+  <script src="./beachblue.js"></script>
 </body>
 
 </html>

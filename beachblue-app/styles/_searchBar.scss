@@ -1,0 +1,36 @@
+.search-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+.search-bar input {
+  font-family: inherit ;
+  width: 640px;
+  height: 42px;
+  padding: 20px;
+  font-size: 17px;
+  border: 1px solid rgb(231, 231, 231);
+  background: #ffffff;
+  border-radius: 200px;
+}
+
+.search-btn {
+  font-family: inherit ;
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  background: #0F7B98;
+  color: white;
+  font-size: 14px;
+  border: 1px solid grey;
+  border-left: 10px;
+  border-radius: 200px;
+  margin-left: 20px;
+}
+
