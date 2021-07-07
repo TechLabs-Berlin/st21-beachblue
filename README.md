@@ -2,7 +2,7 @@
 
 ### The Idea
 
-The idea behind beachblue is to help everyone discover their favourite beach from the comfort of their own home. Planning for beach days made easy, or as we say: *Your next dip, right in one click!*
+The idea behind Beachblue is to help everyone discover their favourite beach from the comfort of their own home. Planning for beach days made easy, or as we say: *Your next dip, right in one click!*
 
 ### The Gears
 
