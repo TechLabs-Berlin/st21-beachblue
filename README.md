@@ -10,6 +10,6 @@ Under the hood our website combines [official EU data on waterquality](https://w
 
 ### The Beauty
 
-From stunning Figma files, to a wepage as easy to navigate as child-play: It was a long journey but we are happy an insanely proud to present to you the final result: A working prototype of Beachblue!
+From stunning Figma files, to a wepage as easy to navigate as child-play: It was a long journey but we are happy and insanely proud to present to you the final result: A working prototype of Beachblue!
 
 Please follow the instructions below to run it:
