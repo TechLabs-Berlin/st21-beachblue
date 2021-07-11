@@ -36,5 +36,5 @@ Bruno Macabeus
 
 **TechLabs Berlin Summer Term 2021**
 =======
-# st21-beachblue
+
 
