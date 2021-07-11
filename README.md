@@ -13,3 +13,19 @@ Under the hood our website combines [official EU data on waterquality](https://w
 From stunning Figma files, to a wepage as easy to navigate as child-play: It was a long journey but we are happy and insanely proud to present to you the final result: A working prototype of Beachblue!
 
 Please follow the instructions below to run it:
+
+
+## Contributors
+
+### Team members
+
+- Henrietta Barkó - UX
+- Aron Mikes - DS
+- Nidhi Alpesh Mehta - DS
+- Gabriela Sena - WD
+- Luiz Marini - WD
+
+### Mentor 
+Bruno Macabeus 
+
+**TechLabs Berlin Summer Term 2021**
