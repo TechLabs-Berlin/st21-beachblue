@@ -203,8 +203,6 @@ Comparing computational cost against the number of clusters
 
 Our second attempt was to use the TF-IDF algorithm which Netflix or news sites use to recommend similar movies/articles to you. However the algorithm is mainly good at finding common topics in texts and it seems our short descriptions of the spots were not long or unique enough to bring meaningful results. Perhaps we can use this algorithm on user reviews once we have enough of them. Another ~~failure~~ learning experience!
 
-detail own rating system with method, graphs and accuracy score
-
 ### Getting and Predicting Google ratings
 
 By using the Google Places [API](https://developers.google.com/maps/documentation/places/web-service/overview) we were able to retrieve the ratings of several spots based on their latitude and longitude. A word of caution: Be sure to use the API responsibly and do not scrape large amounts of data from Google, as this is a violation of their ToS and might get you banned. This method yielded us the ratings for only a few spots though. Not only because we did not want to really 'scrape' the API but also because the exact location of the beaches might be different in Google than in our data-set. You can set a certain radius in which to search but still a sizeable amount of beaches did not receive a rating (hidden gems, anyone?).
@@ -212,11 +210,14 @@ To fill in these missing values we split the data with ratings into a training a
 
 The best results where given by a Decision Tree Regressor. You may be familiar with a Decision Tree Classifier which sorts observations into different clusters. The Decision Tree Regressor works similarly but outputs a continuous value instead, in this case a rating between 0 and 5.
 
-[Evaluating the results of the Decision Tree Regressor](https://www.notion.so/f7d7cb6105964c62ae158033b9cdcc8a)
 
-Above you can see on the left the actual values that our test set has and on the right the values our model predicted. Aside from the one outlier it seems to have done a decent job. In more scientific terms our model has a root mean squared error of 0.43 and in less scientific terms our model misses the actual rating by 0.43.
+<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fa15ebb8-c292-45da-9619-5e31f52be70d/actual.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210711%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210711T175259Z&X-Amz-Expires=86400&X-Amz-Signature=ff2ce79ff69c5fe16e783b1ca96deb5e43b38dd64890b24f035efa222d9f7987&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22actual.png%22" alt="The actual values of the test set" />
 
-# Creating our own rating system
+<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1bacb787-302a-41cd-8f1a-0de120adc59c/pred.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210711%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210711T174950Z&X-Amz-Expires=86400&X-Amz-Signature=bc8d4d949a1ac5cac77ba62d46722bcb1e7fc687c339d4404949c0467a54da44&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22pred.png%22" alt="The actual values of the test set" />
+
+Above you can see on top the actual values that our test set has and below the values our model predicted. Aside from the one outlier it seems to have done a decent job. In more scientific terms our model has a root mean squared error of 0.43 and in less scientific terms our model misses the actual rating by 0.43.
+
+### Creating our own rating system
 
 We already had the google ratings, but we wanted to give our users the best experience while they use our web app. So we wanted to recommend to them some places which had the best facilities that they were looking for. Hence, we came up with our own rating system where each facility had a weight or value assigned to it. Depending on those values the beaches were rated from 1-5. We also had implemented a machine learning model based on classification, which in the future would be able to classify the beaches from 1-5 based on the user's input if there are some additional facilities available on that spot. While testing our machine learning model we saw that we had the best-predicted score of 93% when the kNclassifier was set to 3. We also tested various other KNclassifier values to get the predicted score as shown in the figure below. 
 

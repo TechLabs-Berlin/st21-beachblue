@@ -1,4 +1,3 @@
-
 ## Beachblue
 
 ### The Idea
@@ -15,11 +14,6 @@ From stunning Figma files, to a wepage as easy to navigate as child-play: It was
 
 Please follow the instructions below to run it:
 
-- Open the beachblue - app folder
-- Look for the index.html file (ideally, you have the Live Server extension in your Vs. Code)
-- right-click and choose the option "Open With Server."
-- Once opened, you will be on our home page.
-
 
 ## Contributors
 
@@ -35,6 +29,3 @@ Please follow the instructions below to run it:
 Bruno Macabeus 
 
 **TechLabs Berlin Summer Term 2021**
-=======
-# st21-beachblue
-
