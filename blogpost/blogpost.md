@@ -203,8 +203,6 @@ Comparing computational cost against the number of clusters
 
 Our second attempt was to use the TF-IDF algorithm which Netflix or news sites use to recommend similar movies/articles to you. However the algorithm is mainly good at finding common topics in texts and it seems our short descriptions of the spots were not long or unique enough to bring meaningful results. Perhaps we can use this algorithm on user reviews once we have enough of them. Another ~~failure~~ learning experience!
 
-detail own rating system with method, graphs and accuracy score
-
 ### Getting and Predicting Google ratings
 
 By using the Google Places [API](https://developers.google.com/maps/documentation/places/web-service/overview) we were able to retrieve the ratings of several spots based on their latitude and longitude. A word of caution: Be sure to use the API responsibly and do not scrape large amounts of data from Google, as this is a violation of their ToS and might get you banned. This method yielded us the ratings for only a few spots though. Not only because we did not want to really 'scrape' the API but also because the exact location of the beaches might be different in Google than in our data-set. You can set a certain radius in which to search but still a sizeable amount of beaches did not receive a rating (hidden gems, anyone?).
