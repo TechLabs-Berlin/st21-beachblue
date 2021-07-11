@@ -1,0 +1,48 @@
+.logo {
+  width: 50px;
+}
+
+.menu-bg {
+  background: transparent;
+}
+
+.menu {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a {
+  color: $thirdColor;
+}
+
+.menu-logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Maven Pro';
+}
+
+.menu-logo a {
+  font-size: 34px;
+  margin: 0 10px;
+}
+
+.menu-btn {
+  display: flex;
+  background: $secondaryColor;
+  padding: 5px 20px;
+  border-radius: 25px;
+  width: 165px;
+}
+
+.menu-btn a {
+  font-size: 16px;
+  display: block;
+  padding: 10px;
+
+}
+

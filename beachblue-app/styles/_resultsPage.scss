@@ -1,0 +1,134 @@
+#map {
+  height: 400px;
+  width: 25%;
+}
+
+.home-content-results {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+.cards {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  font-family: "Maven Pro";
+  font-size: 16px;
+  width: 750px;
+  height: 450px;
+}
+
+.result-card {
+  margin-bottom: 20px;
+  background-color: #ECFAFA;
+  width: 730px;
+  height: 180px;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 20px;
+}
+
+.card-body {
+  margin-top: 0em;
+}
+
+.result-card-img {
+    height: 180px;
+    width: 180px;
+    float: left;
+    padding-right: 1em;
+    margin: 0;
+}
+
+.lake-beach {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 24px;
+    line-height: 28px;
+    color: #004546;
+}
+
+.city-country { 
+    margin-top: 0.5em;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1.5px;
+    color: #004546;
+    margin: 0;
+}
+
+.tags {
+    padding-top: 4em;
+    font-family: "Maven Pro";
+}
+
+.tag {
+    background-color: #D8ECEF;
+    padding: 1em;
+    margin: 0em .3em 0em .1em;
+    border-radius: 9999px;
+    color: #004546;
+    text-decoration: none;
+}
+
+.filter{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 95px;
+}
+
+.filter h1{
+  margin-bottom: 12px;
+  font-family: Maven Pro;
+  font-size: 24px;
+  color: #04252E;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-family: Maven Pro;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 10px;
+  letter-spacing: 0.4px;
+  color: #04252E;
+}
+
+input[type=checkbox] + label{
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+}
+
+input[type=checkbox]{
+  display: none;
+}
+
+input[type=checkbox] + label:before{
+  content: "\2714";
+  border:0.1em solid #004546;
+  border-radius: 0.1em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding-left:0.3em;
+  padding-bottom: 0.2em;
+  margin-right: 10px;
+  vertical-align: bottom;
+  color: transparent;
+  transition: .2s;
+}
+
+input[type=checkbox] + label:active:before{
+  transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before{
+  background-color: #0f7b98;
+  border-color: #0f7b98;
+  color: #ffffff;
+}
+
+

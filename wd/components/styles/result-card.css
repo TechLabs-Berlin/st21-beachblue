@@ -1,0 +1,64 @@
+h3
+
+* {
+    font-family: "Maven Pro"; 
+}
+
+body {
+    font-family: "Maven Pro";
+    font-size: 14px;
+}
+
+.result-card {
+    background-color: #ECFAFA;
+    width: 730px;
+    height: 180px;
+    overflow: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    left: 0px;
+    top: 0px;
+    border-radius: 20px;
+}
+
+.card-body {
+    margin-top: 0em;
+}
+
+.result-card-img {
+    height: 180px;
+    width: 180px;
+    float: left;
+    padding-right: 1em;
+    margin: 0;
+}
+
+.lake-beach {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 24px;
+    line-height: 28px;
+    color: #004546;
+}
+
+.city-country { 
+    margin-top: 0.5em;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1.5px;
+    color: #004546;
+    margin: 0;
+}
+
+.tags {
+    padding-top: 5em;
+    font-family: "Maven Pro";
+}
+
+.tag {
+    background-color: #D8ECEF;
+    padding: 1em;
+    margin: 0em .3em 0em .1em;
+    border-radius: 9999px;
+    color: #004546;
+    text-decoration: none;
+}

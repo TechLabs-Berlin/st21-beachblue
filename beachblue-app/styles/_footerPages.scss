@@ -1,0 +1,30 @@
+.footer-main { 
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 100%;
+  margin-top: 55px;
+  padding: 60px 170px;
+  background-color: #BEE7E9;;
+}
+
+.footer-main li { 
+  margin-bottom: 5px;
+}
+
+.footer-main a { 
+  font-family: Maven Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 10px;
+  letter-spacing: 0.4px;
+  color: #04252E;
+}
+
+.footer-tl { 
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  color: #044655;
+  font-family: Maven Pro;
+}
