@@ -20,6 +20,12 @@
   color: $thirdColor;
 }
 
+.menu-logo {
+  display: flex;
+  align-items: center;
+  font-family: 'Maven Pro';
+}
+
 .menu-logo a {
   font-size: 34px;
   margin: 0 10px;

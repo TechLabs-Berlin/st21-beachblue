@@ -1,10 +1,10 @@
 /* Cards */
 
-.cards { 
+.cards-main { 
   max-width: 960px;
   margin: 0 auto;
 }
-.cards h3 {
+.cards-main h3 {
   display: flex;
   justify-content: center;
   color: #0F7B98;
@@ -12,18 +12,18 @@
   margin-top: 75px;
 }
 
-.cards-container { 
+.cards-content { 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.card img {
+.card-home img {
   width: 300px;
   height: 200px;
 }
 
-.card {
+.card-home {
   width: 300px;
   border-radius: 20px;
   overflow: hidden;
@@ -31,7 +31,7 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.card-body {
+.card-body-home {
   padding: 16px;
 }
 

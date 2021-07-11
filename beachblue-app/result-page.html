@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./top-navigation.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Search</title>
 </head>
 
 <body>
     <!-- Header -->
     <header class="header">
-        <a href="/" class="link-logo ">
+        <a target="_self" href="index.html" class="link-logo ">
             <img src="./styles/img/beachlogo_nav_grey.png" width="50" height="51" class="logo-image" />
             <p class="logo-text">Beachblue</p>
         </a>
@@ -21,59 +21,48 @@
             <input type="text" id="search-text" placeholder="Berlin..." name="search" class="input-search ">
             <button type="button" class="base-button button-header button-search"> Search </button>
         </div>
-        <button type="button" class="base-button button-header button-picks">Our top picks</button>
+        <button type="button" id="recomendationButton" class="base-button button-header button-picks">Our top
+            picks</button>
     </header>
 
-    <section class="home-content">
-        <form class="filter">
-            <h1>Filter</h1>
-            <input type="checkbox" id="nudist" name="Nudism">
-            <label for="Nudist">Nudist</label>
+    <section class="home-content-results"">
+        <form class=" filter">
+        <h1>Filter</h1>
+        <input type="checkbox" id="nudist" name="Nudism">
+        <label for="Nudist">Nudist</label>
 
-            <input type="checkbox" id="noentry" name="Surfing_Zone">
-            <label for="noentry">Surfing area</label>
+        <input type="checkbox" id="noentry" name="Surfing_Zone">
+        <label for="noentry">Surfing area</label>
 
-            <input type="checkbox" id="restaurant" name="Showers">
-            <label for="rest">Showers</label>
+        <input type="checkbox" id="restaurant" name="Showers">
+        <label for="rest">Showers</label>
 
-            <input type="checkbox" id="shops" name="Child_Zone">
-            <label for="shops">Child Zone</label>
+        <input type="checkbox" id="shops" name="Child_Zone">
+        <label for="shops">Child Zone</label>
 
-            <input type="checkbox" id="toilet" name="Toilets">
-            <label for="toilet">toilet access</label>
+        <input type="checkbox" id="toilet" name="Toilets">
+        <label for="toilet">toilet access</label>
 
-            <input type="checkbox" id="pets" name="Yacht_Club">
-            <label for="pets">Yacht Club</label>
+        <input type="checkbox" id="pets" name="Yacht_Club">
+        <label for="pets">Yacht Club</label>
 
-            <input type="checkbox" id="family" name="Footbaths">
-            <label for="family">Footbaths</label>
+        <input type="checkbox" id="family" name="Footbaths">
+        <label for="family">Footbaths</label>
 
-            <input type="checkbox" id="parking" name="Parking">
-            <label for="parking">parking lot</label>
+        <input type="checkbox" id="parking" name="Parking">
+        <label for="parking">parking lot</label>
 
-            <input type="checkbox" id="ptrasnport" name="Reachable_by_bus">
-            <label for="ptrasnport">public transport</label>
+        <input type="checkbox" id="ptrasnport" name="Reachable_by_bus">
+        <label for="ptrasnport">public transport</label>
 
-            <input type="checkbox" id="barrier-free" name="Trashcans">
-            <label for="barrier-free">Trashcans</label>
+        <input type="checkbox" id="barrier-free" name="Trashcans">
+        <label for="barrier-free">Trashcans</label>
         </form>
 
         <div class="cards">
-            <div id="test" class="cards-container" onclick="show('about')">
+            <div id="test" class="cards-container">
                 <div id="cards-dynamic">
-                    <div class="result-card">
-                        <img class="result-card-img" src="./styles/img/beach-1.png" alt="">
-                        <div class="card-body">
-                            <p class="lake-beach">Krumme Lanke</p>
-                            <p class="city-country">Berlin, Germany</p>
-                        </div>
-                        <div class="tags">
-                            <a class="tag" href="">Sandy Beach</a>
-                            <a class="tag" href="">Nudist</a>
-                            <a class="tag" href="">Water Sports</a>
-                            <a class="tag" href="">Sunbeds & Shade</a>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -83,7 +72,7 @@
 
     <section class="about" id="about">
         <div class="about-main">
-            <h2>Playa de las Conchas</h2>
+            <h2>La Mar Bella</h2>
             <div class="carousel">
                 <img src="./styles/img/lasconchas.jpeg" alt="">
                 <img src="./styles/img/lasconchas-2.jpeg" alt="">
@@ -93,13 +82,18 @@
             </div>
             <div class="description-main">
                 <p class="description">
-                    "Urban beach with a high degree of occupation and equipped with very attractive infrastructures,
-                    services and leisure offers for tourism.
+                    Beach located between Nova Mar Bella and Bogatell, with characteristics very similar to those of the
+                    beaches in the area, where fans of Wind-Surfing are concentrated.
                 </p>
 
                 <div class="open-hours">
                     <h3>Opening hours</h3>
                     <p>Every Day</p>
+                    <ul>
+                        <li> 21 May - 8 Aug 9-13 15-20</li>
+                        <li>9 Aug - 31 Aug 9-13 15-20</li>
+                        <li>1 Sep - 12 Sep 9-13 15-20</li>
+                    </ul>
                 </div>
             </div>
             <div class="info">
@@ -142,10 +136,10 @@
         </div>
     </section>
     <footer>
-        <div class="footer">
+        <div class="footer-main">
             <ul>
                 <li>
-                    <p class="footer-title">Sitemap</p>
+                    <p class="footer-tl">Sitemap</p>
                 </li>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Search</a></li>
@@ -153,7 +147,7 @@
             </ul>
             <ul>
                 <li>
-                    <p class="footer-title">Locations</p>
+                    <p class="footer-tl">Locations</p>
                 </li>
                 <li><a href="#">Germany</a></li>
                 <li><a href="#"> Spain</a></li>
@@ -162,8 +156,8 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./result.js"></script>
-    <script src="./google-maps.js"></script>
+    <script src="./js/result.js"></script>
+    <script src="./js/google-maps.js"></script>
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJGKLB6bwyiaXv2yCRelJlejTUpV_E1Jc&callback=initMap"
         type="text/javascript">

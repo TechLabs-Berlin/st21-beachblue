@@ -1,0 +1,81 @@
+/* Cards */
+.cards-beach { 
+  max-width: 90%;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: Maven Pro;
+  color: #0F7B98;
+  font-size: 2em;
+  margin-top: 75px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.25px;
+  margin: 30px 0px;
+}
+
+.cards-container-beach { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-recommendations img {
+  width: 300px;
+  height: 200px;
+}
+
+.card-recommendations {
+  width: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card-body-recommedations {
+  font-family: 'Maven Pro';
+  padding: 16px;
+}
+
+.city-country { 
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  color: #004546;
+  margin: 0;
+}
+
+.lake-beach {
+  font-size: 24px;
+  line-height: 28px;
+  color: #004546;
+  margin: 0;
+}
+
+.description-beach {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #04252E;
+}
+
+.places {
+  max-width: 88%;
+  margin: 0 auto;
+}
+
+.places p {
+  font-family: Maven Pro;
+  font-weight: lighter;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0.25px;
+  color: #0F7B98;
+  margin: 10px 0px;
+}
